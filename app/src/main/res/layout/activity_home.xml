@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backgroundmain"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/pnrcard"
+                android:layout_margin="10dp"
+                app:cardElevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/pnrrelativelayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:id="@+id/pnrpic"
+                        android:src="@drawable/pnr"
+                        android:layout_height="50dp" />
+
+                    <EditText
+                        android:layout_marginLeft="10dp"
+                        android:hint="ENTER PNR NUMBER"
+                        android:padding="5dp"
+                        android:id="@+id/pnredittext"
+                        android:textSize="22dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/pnrpic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_toRightOf="@id/pnredittext"
+                        android:src="@drawable/search"
+                        android:layout_width="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/pnrsearchpic"
+                        android:layout_height="30dp" />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="10dp"
+                android:id="@+id/livecard"
+                android:layout_below="@id/pnrcard"
+                app:cardElevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/livestatusrelativelayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:id="@+id/livepic"
+                        android:src="@drawable/live"
+                        android:layout_height="50dp" />
+
+                    <EditText
+                        android:layout_marginLeft="10dp"
+                        android:hint="LOCATE YOUR TRAIN"
+                        android:padding="5dp"
+                        android:id="@+id/liveedittext"
+                        android:textSize="22dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/livepic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/search"
+                        android:layout_toRightOf="@id/liveedittext"
+                        android:layout_width="40dp"
+                        android:id="@+id/livesearchpic"
+                        android:layout_height="30dp" />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="10dp"
+                android:id="@+id/traincard"
+                android:layout_below="@id/livecard"
+                app:cardElevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:id="@+id/trainpic"
+                        android:src="@drawable/route"
+                        android:layout_height="50dp" />
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:text="SEARCH FOR TRAINS"
+                        android:padding="5dp"
+                        android:id="@+id/trainedittext"
+                        android:textSize="22dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_toRightOf="@id/trainpic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_below="@id/trainedittext"
+                        android:id="@+id/trainlinear"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:textSize="22dp"
+                            android:hint="SOURCE"
+                            android:layout_margin="5dp"
+                            android:id="@+id/trainfrom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:text="TO"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:textSize="22dp"
+                            android:layout_margin="5dp"
+                            android:hint="DESTINATION"
+                            android:id="@+id/trainTo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+
+                    <ImageView
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/search"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/trainlinear"
+                        android:layout_width="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/trainsearchpic"
+                        android:layout_height="30dp" />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            
+            
+            
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PnrActivity">
+
+    <TextView
+        android:id="@+id/pnractivitynumber"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:textColor="#d10000"
+        android:text="PNR NUMBER"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@id/pnractivitynumber"
+        android:id="@+id/pnractivitytrain"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Train name\nNumber"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="15dp"
+        android:id="@+id/pnractivitydate"
+        android:layout_below="@id/pnractivitytrain"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="Date of Journey"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_below="@id/pnractivitydate"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:text="Boarding\nCode"
+        android:id="@+id/pnractivityfrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:text="Destination\nCode"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_below="@id/pnractivitydate"
+        android:id="@+id/pnractivityto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_below="@id/pnractivityfrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/pnractivityrecyclerview"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

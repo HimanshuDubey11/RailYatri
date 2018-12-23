@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LiveStatusActivity">
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:text="Train Number"
+        android:textStyle="bold"
+        android:textColor="#900"
+        android:textSize="20dp"
+        android:id="@+id/livestatustrainnumber"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:text="Current Position"
+        android:textStyle="bold"
+        android:textColor="#909"
+        android:textSize="30dp"
+        android:layout_below="@id/livestatustrainnumber"
+        android:textAlignment="center"
+        android:id="@+id/livestatuscurrenttext"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="Position"
+        android:textStyle="bold"
+        android:textColor="#060000"
+        android:textSize="30dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:background="#167bff"
+        android:layout_below="@id/livestatuscurrenttext"
+        android:id="@+id/livestatuscurrentposition"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="Current Station"
+        android:textStyle="bold"
+        android:textColor="#909"
+        android:textSize="30dp"
+        android:layout_below="@id/livestatuscurrentposition"
+        android:textAlignment="center"
+        android:id="@+id/livestatuscurrentstationtext"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="Station Name"
+        android:textStyle="bold"
+        android:textColor="#060000"
+        android:textSize="30dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:background="#167bff"
+        android:layout_below="@id/livestatuscurrentstationtext"
+        android:id="@+id/livestatuscurrentstaion"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_below="@id/livestatuscurrentstaion"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="#060000"
+            android:textSize="20dp"
+            android:text="Schedule Arrival"
+            android:id="@+id/schedulearrival"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@id/schedulearrival"
+            android:layout_marginTop="10dp"
+            android:textColor="#060000"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:text="Schedule Departure"
+            android:id="@+id/scheduledeparture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/livestatuscurrentstaion"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="#060000"
+            android:textSize="20dp"
+            android:text="Actual Arrival"
+            android:id="@+id/actualarrival"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@id/actualarrival"
+            android:layout_marginTop="10dp"
+            android:textColor="#060000"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:text="Actual Departure"
+            android:id="@+id/actualdeparture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
